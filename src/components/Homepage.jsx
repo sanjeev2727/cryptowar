@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import millify from 'millify';
 import { Typography, Row, Col, Statistic, Card } from 'antd';
 import { Link } from 'react-router-dom';
@@ -11,7 +11,6 @@ import Loader from './Loader';
 const { Title } = Typography;
 
 const Homepage = () => {
-  const [simplified, setSimplified] = useState(true);
   const { data, isFetching } = useGetCryptosQuery(10);
   const globalStats = data?.data?.stats;
 
