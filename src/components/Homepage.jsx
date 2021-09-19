@@ -30,7 +30,7 @@ const Homepage = () => {
       total24hVolume: globalStats?.totalExchanges ? millify(globalStats?.total24hVolume) : 0,
       isFetching,
     });
-  }, []);
+  }, [data]);
 
   if (isFetching) return <Loader />;
 
