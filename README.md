@@ -1,10 +1,8 @@
 # Crypto war - Explore the World of Cryptocurrency
 
-![Cryptoverse](https://i.ibb.co/8gh5Jc8/image.png)
-
 ## Introduction
 
-In this video, we will create a cryptocurrency app. We're going to use React and multiple APIs powered by https://rapidapi.com.
+This is a cryptocurrency app. Creating using React, Redux query, Chart.js and multiple APIs powered by https://rapidapi.com.
 
 Setup:
 
