@@ -44,11 +44,6 @@ const Homepage = () => {
         </Col>
         <Col span={8}>
           <Card hoverable>
-            <Statistic title="Total Cryptocurrencies" value={globalStats.total} valueStyle={{ color: '#1890ff' }} />
-          </Card>
-        </Col>
-        <Col span={8}>
-          <Card hoverable>
             <Statistic title="Total Markets" valueStyle={{ color: '#1890ff' }} value={millify(globalStats?.totalMarkets)} />
           </Card>
         </Col>
