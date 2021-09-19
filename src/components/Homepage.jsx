@@ -40,27 +40,27 @@ const Homepage = () => {
         Global Crypto Stats
       </Title>
       <Row gutter={[32, 32]}>
-        <Col xm={12} sm={12} md={8}>
+        <Col span={8} xm={24} sm={12} md={6}>
           <Card hoverable>
             <Statistic valueStyle={{ color: '#1890ff' }} title="Total Cryptocurrencies" value={statsData.total} />
           </Card>
         </Col>
-        <Col xm={12} sm={12} md={8}>
+        <Col span={8} xm={24} sm={12} md={6}>
           <Card hoverable>
             <Statistic title="Total Exchanges" valueStyle={{ color: '#1890ff' }} value={statsData.totalExchanges} />
           </Card>
         </Col>
-        <Col xm={12} sm={12} md={8}>
+        <Col span={8} xm={24} sm={12} md={6}>
           <Card hoverable>
             <Statistic title="Total Market Cap" valueStyle={{ color: '#1890ff' }} value={`$${statsData.totalMarketCap}`} />
           </Card>
         </Col>
-        <Col xm={12} sm={12} md={6}>
+        <Col span={8} xm={24} sm={12} md={6}>
           <Card hoverable>
             <Statistic title="Total 24h Volume" valueStyle={{ color: '#1890ff' }} value={`$${statsData.total24hVolume}`} />
           </Card>
         </Col>
-        <Col xm={12} sm={12} md={6}>
+        <Col span={8} xm={24} sm={12} md={6}>
           <Card hoverable>
             <Statistic title="Total Markets" valueStyle={{ color: '#1890ff' }} value={statsData.totalMarkets} />
           </Card>
