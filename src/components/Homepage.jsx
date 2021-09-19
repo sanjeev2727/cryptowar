@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import millify from 'millify';
 import { Typography, Row, Col, Statistic, Card } from 'antd';
 import { Link } from 'react-router-dom';
@@ -11,6 +11,7 @@ import Loader from './Loader';
 const { Title } = Typography;
 
 const Homepage = () => {
+  const [simplified, setSimplified] = useState(true);
   const { data, isFetching } = useGetCryptosQuery(10);
   const globalStats = data?.data?.stats;
 
@@ -18,38 +19,38 @@ const Homepage = () => {
 
   return (
     <>
-      <Title level={2} className="heading" hoverable>
+      <Title level={2} className="heading">
         Global Crypto Stats
       </Title>
       <Row gutter={[32, 32]}>
         <Col span={8}>
           <Card hoverable>
-            <Statistic valueStyle={{ color: '#1890ff' }} title="Total Cryptocurrencies" value={globalStats?.total} />
+            <Statistic valueStyle={{ color: "#1890ff" }} title="Total Cryptocurrencies" value={globalStats?.total} />
           </Card>
         </Col>
         <Col span={8}>
           <Card hoverable>
-            <Statistic title="Total Exchanges" valueStyle={{ color: '#1890ff' }} value={millify(globalStats?.totalExchanges)} />
+            <Statistic title="Total Exchanges" valueStyle={{ color: "#1890ff" }} value={millify(globalStats?.totalExchanges)} />
           </Card>
         </Col>
         <Col span={8}>
           <Card hoverable>
-            <Statistic title="Total Market Cap" valueStyle={{ color: '#1890ff' }} value={`$${millify(globalStats?.totalMarketCap)}`} />
+            <Statistic title="Total Market Cap" valueStyle={{ color: "#1890ff" }} value={`$${millify(globalStats?.totalMarketCap)}`} />
           </Card>
         </Col>
         <Col span={8}>
           <Card hoverable>
-            <Statistic title="Total 24h Volume" valueStyle={{ color: '#1890ff' }} value={`$${millify(globalStats?.total24hVolume)}`} />
+            <Statistic title="Total 24h Volume" valueStyle={{ color: "#1890ff" }} value={`$${millify(globalStats?.total24hVolume)}`} />
           </Card>
         </Col>
         <Col span={8}>
           <Card hoverable>
-            <Statistic title="Total Cryptocurrencies" value={globalStats.total} valueStyle={{ color: '#1890ff' }} />
+            <Statistic title="Total Cryptocurrencies" value={globalStats.total} valueStyle={{ color: "#1890ff" }} />
           </Card>
         </Col>
         <Col span={8}>
           <Card hoverable>
-            <Statistic title="Total Markets" valueStyle={{ color: '#1890ff' }} value={millify(globalStats?.totalMarkets)} />
+            <Statistic title="Total Markets" valueStyle={{ color: "#1890ff" }} value={millify(globalStats?.totalMarkets)} />
           </Card>
         </Col>
       </Row>
