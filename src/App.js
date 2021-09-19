@@ -34,7 +34,7 @@ const App = () => (
       </Layout>
       <div className="footer">
         <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2021
-          <Link to="/" style={{ margin: "0 10px" }}>
+          <Link to="/" style={{ margin: '0 10px' }}>
             Crypto War.
           </Link>
           All Rights Reserved.
