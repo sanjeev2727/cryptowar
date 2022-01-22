@@ -35,7 +35,7 @@ const Homepage = () => {
     });
 
     // console.log("statsData", statsData);
-  }, []);
+  }, [isFetching, globalStats?.total, globalStats?.totalExchanges, globalStats?.totalMarkets, globalStats?.total24hVolume, globalStats?.totalMarketCap]);
 
   return (
     <>

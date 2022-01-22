@@ -24,7 +24,7 @@ const Exchanges = () => {
         <Col span={6}>Change</Col>
       </Row>
       <Row>
-        {exchangesList.map((exchange) => (
+        {exchangesList && exchangesList.map((exchange) => (
           <Col span={24}>
             <Collapse>
               <Panel
@@ -41,7 +41,7 @@ const Exchanges = () => {
                     <Col span={6}>{millify(exchange.numberOfMarkets)}</Col>
                     <Col span={6}>{millify(exchange.marketShare)}%</Col>
                   </Row>
-                  )}
+                )}
               >
                 {HTMLReactParser(exchange.description || '')}
               </Panel>
