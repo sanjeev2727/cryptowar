@@ -7,7 +7,7 @@ import { useGetCryptosQuery } from '../services/cryptoApi';
 import Cryptocurrencies from './Cryptocurrencies';
 import News from './News';
 import Loader from './Loader';
-import NoData from './NoData';
+//import NoData from './NoData';
 
 const { Title } = Typography;
 
@@ -34,7 +34,7 @@ const Homepage = () => {
       isFetching: isFetching || false,
     });
 
-    console.log("statsData", statsData);
+    // console.log("statsData", statsData);
   }, []);
 
   return (
